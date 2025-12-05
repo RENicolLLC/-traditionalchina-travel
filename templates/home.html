@@ -6,9 +6,9 @@
 <!-- Urgency Banner -->
 <div class="urgency-banner">
     <div class="urgency-content">
-        <span class="urgency-icon">🔥</span>
-        <span class="urgency-text"><strong>Limited Availability!</strong> Only 4 spots left for our March 2025 departure</span>
-        <a href="/reserve" class="urgency-btn">Book Now</a>
+        <span class="urgency-icon">🎯</span>
+        <span class="urgency-text"><strong>Early Bird Ends Feb 1!</strong> Save $300 on our May & June 2026 tours</span>
+        <a href="#tour-calendar" class="urgency-btn">View Dates</a>
     </div>
 </div>
 
@@ -67,7 +67,7 @@
         
         <!-- Tour 1: China Essentials -->
         <div class="package-card featured">
-            <div class="package-badge">BEST SELLER</div>
+            <div class="package-badge">MAY 20-30, 2026</div>
             <div class="package-image">
                 <img src="/static/images/great-wall-mutianyu.jpg" 
                      alt="Great Wall of China at Mutianyu" 
@@ -108,8 +108,8 @@
                 </div>
                 <div class="package-footer">
                     <div class="package-pricing">
-                        <span class="current-price">$2,199</span>
-                        <span class="per-person">per person, ground only</span>
+                        <span class="early-bird-price">From $1,899</span>
+                        <span class="per-person">Early Bird (book by Feb 1) · Ground only</span>
                     </div>
                     <a href="/itinerary" class="btn btn-primary">View Itinerary</a>
                 </div>
@@ -118,7 +118,7 @@
 
         <!-- Tour 2: China Premium Scenic -->
         <div class="package-card" style="margin-top: 2rem;">
-            <div class="package-badge" style="background: #28a745;">PREMIUM</div>
+            <div class="package-badge" style="background: #28a745;">JUNE 3-15, 2026</div>
             <div class="package-image">
                 <img src="/static/images/shanghai-yu-garden.jpg" 
                      alt="Yu Garden Shanghai" 
@@ -159,10 +159,10 @@
                 </div>
                 <div class="package-footer">
                     <div class="package-pricing">
-                        <span class="current-price">$3,499</span>
-                        <span class="per-person">per person, ground only</span>
+                        <span class="early-bird-price">From $3,199</span>
+                        <span class="per-person">Early Bird (book by Feb 1) · Ground only</span>
                     </div>
-                    <a href="/reserve" class="btn btn-outline">Request Info</a>
+                    <a href="/reserve" class="btn btn-primary">Request Info</a>
                 </div>
             </div>
         </div>
@@ -319,51 +319,79 @@
     </div>
 </section>
 
-<!-- Upcoming Departure & Pricing -->
-<section class="departures">
+<!-- 2026 Tour Calendar -->
+<section class="departures" id="tour-calendar">
     <div class="departures-container">
-        <h2>May 10, 2026 Departure</h2>
-        <p class="departures-subtitle">China Essentials Discovery Tour (10 Days) — Book Early & Save!</p>
-        <div class="departures-grid">
-            <div class="departure-card early-bird">
-                <div class="departure-badge">BEST VALUE</div>
-                <div class="departure-date">
-                    <span class="month">Book by</span>
-                    <span class="day">FEB 1</span>
-                    <span class="year">2026</span>
-                </div>
-                <div class="departure-info">
-                    <span class="departure-status">Early Bird - Save $500</span>
-                    <span class="departure-price">$1,999</span>
-                </div>
-                <a href="/reserve" class="btn btn-primary btn-small">Book Now</a>
+        <h2>2026 Tour Calendar</h2>
+        <p class="departures-subtitle">Two back-to-back tours — Book early for the best rates!</p>
+        
+        <!-- Tour 1: Essentials -->
+        <div class="tour-calendar-card">
+            <div class="tour-calendar-header">
+                <h3>China Essentials Discovery Tour</h3>
+                <span class="tour-dates-badge">May 20–30, 2026</span>
             </div>
-            <div class="departure-card">
-                <div class="departure-date">
-                    <span class="month">Book by</span>
-                    <span class="day">MAR 15</span>
-                    <span class="year">2026</span>
+            <p class="tour-calendar-desc">10 days · 3 cities · Beijing, Xi'an, Shanghai</p>
+            <div class="pricing-tiers">
+                <div class="tier early-bird">
+                    <span class="tier-label">🎯 Early Bird</span>
+                    <span class="tier-deadline">Book by Feb 1</span>
+                    <span class="tier-price">$1,899</span>
+                    <span class="tier-savings">Save $300</span>
                 </div>
-                <div class="departure-info">
-                    <span class="departure-status">Standard Rate</span>
-                    <span class="departure-price">$2,199</span>
+                <div class="tier">
+                    <span class="tier-label">Standard</span>
+                    <span class="tier-deadline">Book by Mar 15</span>
+                    <span class="tier-price">$2,099</span>
                 </div>
-                <a href="/reserve" class="btn btn-outline btn-small">Select</a>
+                <div class="tier">
+                    <span class="tier-label">Regular</span>
+                    <span class="tier-deadline">Book by Apr 12</span>
+                    <span class="tier-price">$2,199</span>
+                </div>
+                <div class="tier last-call">
+                    <span class="tier-label">Last Call</span>
+                    <span class="tier-deadline">After May 10</span>
+                    <span class="tier-price">$2,499</span>
+                </div>
             </div>
-            <div class="departure-card">
-                <div class="departure-date">
-                    <span class="month">Book by</span>
-                    <span class="day">APR 12</span>
-                    <span class="year">2026</span>
-                </div>
-                <div class="departure-info">
-                    <span class="departure-status">Late Booking</span>
-                    <span class="departure-price">$2,500</span>
-                </div>
-                <a href="/reserve" class="btn btn-outline btn-small">Select</a>
-            </div>
+            <a href="/reserve" class="btn btn-primary">Reserve Essentials Tour</a>
         </div>
-        <p class="departures-note">✈️ Departs May 10, 2026 · Only 12 spots available · $500 deposit reserves your place</p>
+
+        <!-- Tour 2: Premium -->
+        <div class="tour-calendar-card premium">
+            <div class="tour-calendar-header">
+                <h3>China Premium Scenic Tour</h3>
+                <span class="tour-dates-badge premium">June 3–15, 2026</span>
+            </div>
+            <p class="tour-calendar-desc">12-13 days · 5+ destinations · Includes Guilin, Li River & Giant Pandas</p>
+            <div class="pricing-tiers">
+                <div class="tier early-bird">
+                    <span class="tier-label">🎯 Early Bird</span>
+                    <span class="tier-deadline">Book by Feb 1</span>
+                    <span class="tier-price">$3,199</span>
+                    <span class="tier-savings">Save $300</span>
+                </div>
+                <div class="tier">
+                    <span class="tier-label">Standard</span>
+                    <span class="tier-deadline">Book by Mar 15</span>
+                    <span class="tier-price">$3,399</span>
+                </div>
+                <div class="tier">
+                    <span class="tier-label">Regular</span>
+                    <span class="tier-deadline">Book by Apr 12</span>
+                    <span class="tier-price">$3,499</span>
+                </div>
+                <div class="tier last-call">
+                    <span class="tier-label">Last Call</span>
+                    <span class="tier-deadline">After May 10</span>
+                    <span class="tier-price">$3,799</span>
+                </div>
+            </div>
+            <a href="/reserve" class="btn btn-primary">Reserve Premium Tour</a>
+        </div>
+
+        <p class="departures-note">💰 $500 deposit reserves your spot · Free cancellation until 30 days before departure · Max 12 guests per tour</p>
     </div>
 </section>
 

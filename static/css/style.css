@@ -1307,6 +1307,132 @@ img {
     font-size: 0.95rem;
 }
 
+/* Tour Calendar Cards */
+.tour-calendar-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+}
+
+.tour-calendar-card.premium {
+    border: 2px solid #28a745;
+}
+
+.tour-calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.tour-calendar-header h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--color-terracotta);
+    margin: 0;
+}
+
+.tour-dates-badge {
+    background: var(--color-terracotta);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.tour-dates-badge.premium {
+    background: #28a745;
+}
+
+.tour-calendar-desc {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.pricing-tiers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tier {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tier:hover {
+    border-color: var(--color-terracotta);
+    transform: translateY(-2px);
+}
+
+.tier.early-bird {
+    background: linear-gradient(135deg, #fff9e6, #fff3cd);
+    border-color: #d4af37;
+}
+
+.tier.last-call {
+    background: #fff5f5;
+    border-color: #dc3545;
+}
+
+.tier-label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--color-terracotta);
+    margin-bottom: 0.25rem;
+}
+
+.tier-deadline {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.tier-price {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.tier-savings {
+    display: block;
+    font-size: 0.8rem;
+    color: #28a745;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.early-bird-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #28a745;
+}
+
+@media (max-width: 768px) {
+    .tour-calendar-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .pricing-tiers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .package-badge {
     position: absolute;
     top: 20px;
