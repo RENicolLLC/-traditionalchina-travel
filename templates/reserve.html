@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block title %}Reserve{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h1>Reserve Your Journey</h1>
+    <p>Begin your adventure through Traditional China.</p>
+</section>
+
+<section class="reserve-section">
+    <div class="reserve-container">
+        <form class="reserve-form" action="/api/reserve" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first_name">First Name *</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name *</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="travelers">Number of Travelers *</label>
+                    <select id="travelers" name="travelers" required>
+                        <option value="">Select...</option>
+                        <option value="1">1 Traveler</option>
+                        <option value="2">2 Travelers</option>
+                        <option value="3">3 Travelers</option>
+                        <option value="4">4 Travelers</option>
+                        <option value="5+">5+ Travelers</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="departure">Preferred Departure *</label>
+                    <select id="departure" name="departure" required>
+                        <option value="">Select...</option>
+                        <option value="2024-03">March 2024</option>
+                        <option value="2024-04">April 2024</option>
+                        <option value="2024-05">May 2024</option>
+                        <option value="2024-09">September 2024</option>
+                        <option value="2024-10">October 2024</option>
+                        <option value="2024-11">November 2024</option>
+                        <option value="flexible">I'm Flexible</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="room_type">Room Preference</label>
+                <select id="room_type" name="room_type">
+                    <option value="">Select...</option>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room (1 bed)</option>
+                    <option value="twin">Twin Room (2 beds)</option>
+                    <option value="upgrade">Suite Upgrade</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dietary">Dietary Requirements</label>
+                <input type="text" id="dietary" name="dietary" placeholder="Vegetarian, allergies, etc.">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Special Requests or Questions</label>
+                <textarea id="message" name="message" placeholder="Tell us about any special occasions, mobility needs, or questions..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="how_heard">How did you hear about us?</label>
+                <select id="how_heard" name="how_heard">
+                    <option value="">Select...</option>
+                    <option value="google">Google Search</option>
+                    <option value="social">Social Media</option>
+                    <option value="friend">Friend or Family</option>
+                    <option value="travel_agent">Travel Agent</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-outline">Submit Reservation Request</button>
+        </form>
+    </div>
+</section>
+{% endblock %}
+
