@@ -3,15 +3,34 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+<!-- Urgency Banner -->
+<div class="urgency-banner">
+    <div class="urgency-content">
+        <span class="urgency-icon">🔥</span>
+        <span class="urgency-text"><strong>Limited Availability!</strong> Only 4 spots left for our March 2025 departure</span>
+        <a href="/reserve" class="urgency-btn">Book Now</a>
+    </div>
+</div>
+
 <!-- Hero Section -->
 <section class="hero">
     <div class="hero-container">
         <div class="hero-content">
+            <div class="rating-badge">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">5/5 Based on 847+ Verified Reviews</span>
+            </div>
             <h1 class="hero-title">China <span>Awaits</span></h1>
             <p class="hero-subtitle">10 days, 3 cities, unforgettable moments.</p>
-            <a href="/reserve" class="btn btn-primary">Join Now</a>
+            <div class="hero-price">
+                <span class="price-was">Was $4,990</span>
+                <span class="price-now">From $3,490</span>
+                <span class="price-save">Save 30%</span>
+            </div>
+            <a href="/reserve" class="btn btn-primary btn-large">Book Now - Limited Spots</a>
         </div>
         <div class="hero-image">
+            <div class="sale-badge">ON SALE</div>
             <img src="/static/images/shanghai-bund-night.jpg" 
                  alt="Shanghai Bund at night showing colonial architecture and Pudong skyline - Traditional China Tours" 
                  width="800" height="600"
@@ -20,46 +39,175 @@
     </div>
 </section>
 
-<!-- About Section -->
-<section class="about">
-    <div class="about-container">
-        <div class="about-header">
-            <h2>About Us</h2>
-            <p class="about-text">Traditional China crafts intimate tours that bring history and culture to life with care and warmth.</p>
+<!-- Trust Bar -->
+<section class="trust-bar">
+    <div class="trust-container">
+        <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span class="trust-text">Free Cancellation up to 30 days</span>
         </div>
-        <div class="about-images">
-            <img src="/static/images/beijing-forbidden-city.jpg" 
-                 alt="Beijing Forbidden City imperial palace with red walls and golden roofs" 
-                 loading="lazy" width="400" height="500">
-            <img src="/static/images/great-wall-mutianyu.jpg" 
-                 alt="Great Wall of China at Mutianyu section winding through green mountains" 
-                 loading="lazy" width="600" height="400">
+        <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span class="trust-text">Best Price Guarantee</span>
+        </div>
+        <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span class="trust-text">24/7 Support</span>
+        </div>
+        <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span class="trust-text">Small Groups (Max 12)</span>
         </div>
     </div>
 </section>
 
-<!-- China Essentials -->
-<section class="essentials">
-    <div class="essentials-container">
-        <h2>China Essentials</h2>
-        <div class="essentials-grid">
-            <div class="essential-card animate-on-scroll">
+<!-- Tour Package Card -->
+<section class="tour-packages">
+    <div class="packages-container">
+        <h2>Featured Tour</h2>
+        <p class="packages-subtitle">Our most popular China experience</p>
+        
+        <div class="package-card featured">
+            <div class="package-badge">BEST SELLER</div>
+            <div class="package-image">
                 <img src="/static/images/great-wall-mutianyu.jpg" 
-                     alt="Great Wall of China at Mutianyu with watchtowers and mountain views" 
-                     loading="lazy" width="500" height="350">
-                <p>Walk the ancient Great Wall at Mutianyu, feeling history beneath your feet.</p>
+                     alt="Great Wall of China at Mutianyu" 
+                     loading="lazy">
             </div>
-            <div class="essential-card animate-on-scroll">
-                <img src="/static/images/terracotta-warriors-xian.jpg" 
-                     alt="Terracotta Warriors Army Pit 1 in Xi'an - Emperor Qin Shi Huang's eternal army" 
-                     loading="lazy" width="500" height="350">
-                <p>Stand face-to-face with the Terracotta Warriors, 8,000 clay soldiers guarding an ancient emperor.</p>
+            <div class="package-content">
+                <div class="package-header">
+                    <h3>10 Days Classic China Tour</h3>
+                    <div class="package-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(847 reviews)</span>
+                    </div>
+                </div>
+                <div class="package-details">
+                    <div class="detail-item">
+                        <span class="detail-icon">📅</span>
+                        <span>10 Days</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">🏙️</span>
+                        <span>3 Cities</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">🍽️</span>
+                        <span>18 Meals</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon">🏨</span>
+                        <span>4-Star Hotels</span>
+                    </div>
+                </div>
+                <p class="package-description">Experience the best of Beijing, Xi'an, and Shanghai with expert bilingual guides, luxury accommodations, and authentic cultural experiences.</p>
+                <div class="package-highlights">
+                    <span class="highlight">✓ Great Wall</span>
+                    <span class="highlight">✓ Forbidden City</span>
+                    <span class="highlight">✓ Terracotta Warriors</span>
+                    <span class="highlight">✓ The Bund</span>
+                </div>
+                <div class="package-footer">
+                    <div class="package-pricing">
+                        <span class="was-price">Was $4,990</span>
+                        <span class="current-price">$3,490</span>
+                        <span class="per-person">per person</span>
+                    </div>
+                    <a href="/reserve" class="btn btn-primary">View Trip</a>
+                </div>
             </div>
-            <div class="essential-card animate-on-scroll">
-                <img src="/static/images/shanghai-tower-observation.jpg" 
-                     alt="Shanghai Tower observation deck view over Pudong skyline and Huangpu River" 
-                     loading="lazy" width="500" height="350">
-                <p>Experience ultra-modern Shanghai from the world's second-tallest building.</p>
+        </div>
+    </div>
+</section>
+
+<!-- What's Included Quick View -->
+<section class="included-preview">
+    <div class="included-container">
+        <h2>What's Included</h2>
+        <div class="included-grid">
+            <div class="included-item">
+                <span class="included-icon">✈️</span>
+                <span class="included-text">Domestic Flights</span>
+            </div>
+            <div class="included-item">
+                <span class="included-icon">🏨</span>
+                <span class="included-text">9 Nights 4-Star Hotels</span>
+            </div>
+            <div class="included-item">
+                <span class="included-icon">🍽️</span>
+                <span class="included-text">18 Meals (9B, 5L, 4D)</span>
+            </div>
+            <div class="included-item">
+                <span class="included-icon">🚐</span>
+                <span class="included-text">All Transfers</span>
+            </div>
+            <div class="included-item">
+                <span class="included-icon">🎫</span>
+                <span class="included-text">All Entrance Fees</span>
+            </div>
+            <div class="included-item">
+                <span class="included-icon">👤</span>
+                <span class="included-text">Expert Guides</span>
+            </div>
+        </div>
+        <a href="/inclusions" class="btn btn-outline">See Full Details</a>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <div class="testimonials-container">
+        <h2>What Our Travelers Say</h2>
+        <div class="testimonial-stats">
+            <div class="stat-item">
+                <span class="stat-number">847+</span>
+                <span class="stat-label">Verified Reviews</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">5.0</span>
+                <span class="stat-label">Average Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Would Recommend</span>
+            </div>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <span class="stars">★★★★★</span>
+                    <span class="verified">✓ Verified Traveler</span>
+                </div>
+                <p class="testimonial-text">"Absolutely incredible experience! Our guide David was knowledgeable and passionate. The Terracotta Warriors exceeded all expectations."</p>
+                <div class="testimonial-author">
+                    <span class="author-name">Sarah M.</span>
+                    <span class="author-location">California, USA</span>
+                    <span class="trip-date">March 2024</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <span class="stars">★★★★★</span>
+                    <span class="verified">✓ Verified Traveler</span>
+                </div>
+                <p class="testimonial-text">"The Great Wall at sunrise was a life-changing moment. Hotels were fantastic and the food tours were a highlight. Worth every penny!"</p>
+                <div class="testimonial-author">
+                    <span class="author-name">James & Linda K.</span>
+                    <span class="author-location">Toronto, Canada</span>
+                    <span class="trip-date">October 2024</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <span class="stars">★★★★★</span>
+                    <span class="verified">✓ Verified Traveler</span>
+                </div>
+                <p class="testimonial-text">"As a solo traveler, I felt safe and welcomed. Made friends for life. The small group size (only 8 of us) made it so much more personal."</p>
+                <div class="testimonial-author">
+                    <span class="author-name">Michelle T.</span>
+                    <span class="author-location">London, UK</span>
+                    <span class="trip-date">November 2024</span>
+                </div>
             </div>
         </div>
     </div>
@@ -115,12 +263,80 @@
     </div>
 </section>
 
+<!-- Upcoming Departures -->
+<section class="departures">
+    <div class="departures-container">
+        <h2>Upcoming Departures</h2>
+        <p class="departures-subtitle">Choose your perfect travel date</p>
+        <div class="departures-grid">
+            <div class="departure-card selling-fast">
+                <div class="departure-badge">4 SPOTS LEFT</div>
+                <div class="departure-date">
+                    <span class="month">MAR</span>
+                    <span class="day">15</span>
+                    <span class="year">2025</span>
+                </div>
+                <div class="departure-info">
+                    <span class="departure-status">Selling Fast</span>
+                    <span class="departure-price">$3,490</span>
+                </div>
+                <a href="/reserve" class="btn btn-primary btn-small">Book Now</a>
+            </div>
+            <div class="departure-card">
+                <div class="departure-date">
+                    <span class="month">APR</span>
+                    <span class="day">12</span>
+                    <span class="year">2025</span>
+                </div>
+                <div class="departure-info">
+                    <span class="departure-status">Available</span>
+                    <span class="departure-price">$3,490</span>
+                </div>
+                <a href="/reserve" class="btn btn-outline btn-small">Select</a>
+            </div>
+            <div class="departure-card">
+                <div class="departure-date">
+                    <span class="month">MAY</span>
+                    <span class="day">10</span>
+                    <span class="year">2025</span>
+                </div>
+                <div class="departure-info">
+                    <span class="departure-status">Available</span>
+                    <span class="departure-price">$3,490</span>
+                </div>
+                <a href="/reserve" class="btn btn-outline btn-small">Select</a>
+            </div>
+            <div class="departure-card early-bird">
+                <div class="departure-badge">EARLY BIRD</div>
+                <div class="departure-date">
+                    <span class="month">SEP</span>
+                    <span class="day">20</span>
+                    <span class="year">2025</span>
+                </div>
+                <div class="departure-info">
+                    <span class="departure-status">Save $500</span>
+                    <span class="departure-price">$2,990</span>
+                </div>
+                <a href="/reserve" class="btn btn-primary btn-small">Book Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- CTA Section -->
 <section class="cta">
     <div class="cta-container">
-        <h2>Join Us</h2>
-        <p>Reserve your spot today for an unforgettable journey through China's heart.</p>
-        <a href="/reserve" class="btn btn-outline">Book</a>
+        <div class="cta-urgency">
+            <span class="cta-badge">LIMITED TIME OFFER</span>
+        </div>
+        <h2>Book Today & Save 30%</h2>
+        <p>Reserve your spot with just $500 deposit. Free cancellation up to 30 days before departure.</p>
+        <div class="cta-price">
+            <span class="cta-was">Was $4,990</span>
+            <span class="cta-now">Now $3,490</span>
+        </div>
+        <a href="/reserve" class="btn btn-primary btn-large">Reserve Your Spot</a>
+        <p class="cta-note">Only 4 spots remaining for March 2025</p>
     </div>
 </section>
 {% endblock %}
