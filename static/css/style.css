@@ -1013,3 +1013,53 @@ img {
     }
 }
 
+/* ===== Day Images Grid (Multiple images) ===== */
+.day-images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.day-images-grid .day-image {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .day-images-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Shanghai Nights Section ===== */
+.shanghai-nights {
+    padding: 6rem 2rem;
+    background: var(--color-slate);
+}
+
+.shanghai-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.shanghai-container h2 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: var(--color-cream);
+    margin-bottom: 1rem;
+}
+
+.shanghai-subtitle {
+    color: var(--color-ink-muted);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.shanghai-hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: var(--shadow-hover);
+}
+
