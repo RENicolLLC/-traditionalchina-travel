@@ -859,3 +859,63 @@ ul {
     }
 }
 
+/* ===== Notification Banner ===== */
+.notification {
+    position: fixed;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    box-shadow: var(--shadow-hover);
+    animation: slideDown 0.4s ease-out;
+}
+
+.notification.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.notification button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: inherit;
+    opacity: 0.7;
+    transition: opacity var(--transition-smooth);
+    line-height: 1;
+}
+
+.notification button:hover {
+    opacity: 1;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* ===== Footer Contact Links ===== */
+.footer-section a {
+    color: var(--color-ink-muted);
+    transition: color var(--transition-smooth);
+}
+
+.footer-section a:hover {
+    color: var(--color-terracotta);
+}
+
