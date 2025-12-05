@@ -1263,6 +1263,40 @@ img {
     border: 2px solid var(--color-terracotta);
 }
 
+.custom-tour-cta {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.05), rgba(212, 175, 55, 0.1));
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.custom-tour-cta h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-terracotta);
+}
+
+.custom-tour-cta p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.hero-price .price-note {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
+.cta-note-inline {
+    display: block;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+    margin-top: 0.25rem;
+}
+
 .package-badge {
     position: absolute;
     top: 20px;
